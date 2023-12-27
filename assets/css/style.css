@@ -4,6 +4,7 @@
     --color-gray: #BBCDCF;
     --color-blue: #D3F1E5;
     --color-gray-2: #6E8085;
+    --color-gray-3: #F3F3F3;
     --color-green: #C4BF58;
 
     --color-white: #ffffff;
@@ -11,7 +12,7 @@
 }
 
 .container{
-    max-width: 1280px;
+    max-width: 1180px;
     margin: auto;
 }
 
@@ -36,6 +37,11 @@
 .w-100{
     width: 100%;
 }
+.sec-default{
+    padding: 80px 10px;
+}
+
+/* ======== general style ========= */
 
 header.header{
     position: absolute;
@@ -48,12 +54,13 @@ header.header{
     background-color: var(--color-second);
     display: flex;
     justify-content: center;
+    height: 40px;
 }
 .access{
     background-color: var(--color-main);
     display: flex;
-    padding: 10px;
-    height: 110%;
+    padding: 20px 30px;
+    height: calc(100% + 20px);
     border-radius: 0 0 10px 10px;
 }
 .list_access{
@@ -167,4 +174,190 @@ nav.menu ul li a{
     margin-bottom: 20px;
     margin-right: 20px;
     height: 80px;
+}
+
+.carousel_dest{
+    background-color: var(--color-second);
+    height: 470px;
+    width: 100%;
+    display: flex;
+}
+.carousel_dest a{
+    display: flex;
+    height: 470px;
+    max-height: 470px;
+}
+.carousel_dest img{
+    height: 100%;
+    max-height: 100%!important;
+    width: auto!important;
+    margin: auto;
+}
+.carousel_dest .owl-nav button{
+    position: absolute;
+    top: 45%;
+    left: 10px;
+}
+.carousel_dest .owl-nav button span{
+    font-size: 4em;
+    color: var(--color-white);
+}
+.carousel_dest .owl-nav button.owl-next{
+    left: unset;
+    right: 10px;
+}
+
+.sing_destaq{
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.card_destaq{
+    background-color: var(--color-gray-3);
+    margin: 10px 0;
+    width: calc(33% - 10px);
+}
+.card_destaq img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.info_card_destaq{
+    padding: 20px 10px;
+    text-align: center;
+}
+.info_card_destaq h4{
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: var(--color-second);
+}
+.info_card_destaq p{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    color: var(--color-second);
+    line-height: 1.1em;
+}
+.over_link_card_destaq{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.link_card_destaq{
+    background-color: var(--color-green);
+    color: var(--color-second);
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.fa_access{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fa_access a{
+    width: calc(25% - 20px);
+    margin: 10px 0;
+    background-color: var(--color-second);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    padding: 15px;
+    min-height: 210px;
+}
+.fa_access a img{
+    margin: auto;
+    margin-bottom: 10px;
+}
+.fa_access p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+.sec_access{
+    background-color: var(--color-blue);
+}
+
+.head_section{
+    display: flex;
+}
+.head_section h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 0 30px;
+    position: relative;
+    width: auto;
+}
+.head_section h2::after{
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-color: var(--color-green);
+}
+.head_section span{
+    position: relative;
+    z-index: 1;
+}
+
+.news_post{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.over_btn_default{
+    padding: 20px;
+}
+.btn-default{
+    background-color: var(--color-second);
+    color: var(--color-white);
+    margin: 20px auto;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+.container_gallery{
+    display: flex;
+    justify-content: space-between;
+}
+.container_gallery a{
+    width: calc(33% - 10px);
+    position: relative;
+    overflow: hidden;
+}
+.container_gallery a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sec_gallery{
+    background-color: var(--color-blue);
+}
+.container_gallery a .show_more_gallery{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10,10,10,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .23s;
+}
+.container_gallery a:hover .show_more_gallery{
+    top: 0;
+}
+.container_gallery a .show_more_gallery span{
+    margin: auto;
+    padding: 10px 20px;
+    background-color: var(--color-green);
+    color: var(--color-second);
 }
