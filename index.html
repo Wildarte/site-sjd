@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -11,10 +12,20 @@
     <title>Prefeitura São José do Divino</title>
 </head>
 <body>
+
+    <div class="over_search">
+        <div class="btn_close_search">
+            <i class="bi bi-x-lg"></i>
+        </div>
+        <form action="" class="form_search">
+            <input type="search" name="" id="" placeholder="Pesquisar...">
+            <button class=""><i class="bi bi-search"></i></button>
+        </form>
+    </div>
     
     <header class="header">
         <div class="top_header">
-            <div class="access">
+            <div class="access animate__animated animate__bounceInDown">
                 <p>Acessibilidade:</p>
 
                 <ul class="list_access">
@@ -35,6 +46,19 @@
                 </a>
 
                 <nav class="menu">
+                    <div class="header_menu">
+                        <a href="" class="logo_header">
+                            <img src="assets/img/logo.png" alt="">
+                            <div class="info_logo">
+                                <p><strong>Prefeitura</strong></p>
+                                <p>São José do Divino</p>
+                            </div>
+                        </a>
+
+                        <div class="btn_close_menu">
+                            <i class="bi bi-x-lg"></i>
+                        </div>
+                    </div>
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="">COMPETÊNCIAS E RESPONSÁVEIS</a></li>
@@ -43,31 +67,64 @@
                         <li><a href="">LICITAÇÕES</a></li>
                         <li><a href="">LEGISLAÇÃO</a></li>
                     </ul>
+
+                    <div class="btn_search">
+                        <i class="bi bi-search"></i>
+                    </div>
                 </nav>
+
+                <div class="btn_menu">
+                    <i class="bi bi-list"></i>
+                </div>
         </div>
     </header>
 
     <main>
         <section class="hero">
 
-            <div class="fast_access">
-                <a href="">
+            <div class="fast_access access_desktop">
+                <a href="" class="animate__animated animate__bounceIn">
                     <img src="assets/img/portal.png" alt="">
                     <p>Portal da transparência</p>
                 </a>
-                <a href="">
+                <a href="" class="animate__animated animate__bounceIn">
                     <img src="assets/img/e-sic.png" alt="">
                     <p>e-sic</p>
                 </a>
-                <a href="">
+                <a href="" class="animate__animated animate__bounceIn">
                     <img src="assets/img/links.png" alt="">
                     <p>Links Importantes</p>
                 </a>
-                <a href="">
+                <a href="" class="animate__animated animate__bounceIn">
                     <img src="assets/img/notas.png" alt="">
                     <p>Nota Fiscal eletrônica</p>
                 </a>
-                <a href="">
+                <a href="" class="animate__animated animate__bounceIn">
+                    <img src="assets/img/licitacoes.png" alt="">
+                    <p>Licitações</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="access_mobile">
+            <div class="fast_access">
+                <a href="" class="animate__animated animate__bounceIn">
+                    <img src="assets/img/portal.png" alt="">
+                    <p>Portal da transparência</p>
+                </a>
+                <a href="" class="animate__animated animate__bounceIn">
+                    <img src="assets/img/e-sic.png" alt="">
+                    <p>e-sic</p>
+                </a>
+                <a href="" class="animate__animated animate__bounceIn">
+                    <img src="assets/img/links.png" alt="">
+                    <p>Links Importantes</p>
+                </a>
+                <a href="" class="animate__animated animate__bounceIn">
+                    <img src="assets/img/notas.png" alt="">
+                    <p>Nota Fiscal eletrônica</p>
+                </a>
+                <a href="" class="animate__animated animate__bounceIn">
                     <img src="assets/img/licitacoes.png" alt="">
                     <p>Licitações</p>
                 </a>
@@ -97,11 +154,11 @@
 
                             <div class="card_destaq">
                                 <a href="">
-                                    <img src="assets/img/milk-party.png" alt="">
+                                    <img src="https://sts-gestao.s3.amazonaws.com/uploads/noticias/6f151b5ad92f3ee6826848d0c0beaa02.png" alt="">
                                 </a>
                                 <div class="info_card_destaq">
-                                    <h4>Título do Destaque</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid error amet tempore voluptas minima, quia numquam dolore ad.</p>
+                                    <h4>AVISO DE CONTRATAÇÃO DIRETA</h4>
+                                    <p>Dispensa Eletrônica nº 003/2024.</p>
 
                                     <div class="over_link_card_destaq">
                                         <a href="" class="link_card_destaq">Saiba Mais</a>
@@ -112,11 +169,11 @@
 
                             <div class="card_destaq">
                                 <a href="">
-                                    <img src="assets/img/milk-party.png" alt="">
+                                    <img src="https://sts-gestao.s3.amazonaws.com/uploads/noticias/c3f0b81cac5f2fd05d270a8206a176f9.png" alt="">
                                 </a>
                                 <div class="info_card_destaq">
-                                    <h4>Título do Destaque</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid error amet tempore voluptas minima, quia numquam dolore ad.</p>
+                                    <h4>RESULTADO PRELIMINAR</h4>
+                                    <p>CONCURSO PÚBLICO</p>
 
                                     <div class="over_link_card_destaq">
                                         <a href="" class="link_card_destaq">Saiba Mais</a>
@@ -127,11 +184,11 @@
 
                             <div class="card_destaq">
                                 <a href="">
-                                    <img src="assets/img/milk-party.png" alt="">
+                                    <img src="https://sts-gestao.s3.amazonaws.com/uploads/noticias/5292c2ec5bd2e8b995d4d830986edeeb.png" alt="">
                                 </a>
                                 <div class="info_card_destaq">
-                                    <h4>Título do Destaque</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid error amet tempore voluptas minima, quia numquam dolore ad.</p>
+                                    <h4>CONCURSO PÚBLICO </h4>
+                                    <p>001/2022-P.M.SÃO JOSÉ DO DIVINO-PI Provimento de cargos efetivos</p>
 
                                     <div class="over_link_card_destaq">
                                         <a href="" class="link_card_destaq">Saiba Mais</a>
@@ -198,10 +255,10 @@
 
                     <div class="card_destaq">
                         <a href="">
-                            <img src="assets/img/milk-party.png" alt="">
+                            <img src="https://sts-gestao.s3.amazonaws.com/uploads/noticias/074cf4154772b6f6694bf575d2580763.png" alt="">
                         </a>
                         <div class="info_card_destaq">
-                            <h4>Título do Destaque</h4>
+                            <h4>EDITAL 01/2024 JORNADA SUPLEMENTAR PARA</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid error amet tempore voluptas minima, quia numquam dolore ad.</p>
 
                             <div class="over_link_card_destaq">
@@ -213,10 +270,10 @@
 
                     <div class="card_destaq">
                         <a href="">
-                            <img src="assets/img/milk-party.png" alt="">
+                            <img src="https://sts-gestao.s3.amazonaws.com/uploads/noticias/9e3f51a589294c74177c59455e0a9558.png" alt="">
                         </a>
                         <div class="info_card_destaq">
-                            <h4>Título do Destaque</h4>
+                            <h4>EDITAL Nº 005/2023 - SECRETARIA MUNICIPAL DE ESPORTE</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid error amet tempore voluptas minima, quia numquam dolore ad.</p>
 
                             <div class="over_link_card_destaq">
@@ -228,10 +285,10 @@
 
                     <div class="card_destaq">
                         <a href="">
-                            <img src="assets/img/milk-party.png" alt="">
+                            <img src="https://sts-gestao.s3.amazonaws.com/uploads/noticias/230fdedb6bb9a0afb09e098b8cc13f41.png" alt="">
                         </a>
                         <div class="info_card_destaq">
-                            <h4>Título do Destaque</h4>
+                            <h4>PREMIAÇÃO LEITEIRA</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid error amet tempore voluptas minima, quia numquam dolore ad.</p>
 
                             <div class="over_link_card_destaq">
@@ -242,25 +299,10 @@
 
                     <div class="card_destaq">
                         <a href="">
-                            <img src="assets/img/milk-party.png" alt="">
+                            <img src="https://sts-gestao.s3.amazonaws.com/uploads/noticias/6ab9fe779f40b1654a7d5e220e12d4e9.png" alt="">
                         </a>
                         <div class="info_card_destaq">
-                            <h4>Título do Destaque</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid error amet tempore voluptas minima, quia numquam dolore ad.</p>
-
-                            <div class="over_link_card_destaq">
-                                <a href="" class="link_card_destaq">Saiba Mais</a>
-                            </div>
-                        </div>
-                    </div>
-                
-
-                    <div class="card_destaq">
-                        <a href="">
-                            <img src="assets/img/milk-party.png" alt="">
-                        </a>
-                        <div class="info_card_destaq">
-                            <h4>Título do Destaque</h4>
+                            <h4>RECADASTRAMENTO DE SERVIDORES</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid error amet tempore voluptas minima, quia numquam dolore ad.</p>
 
                             <div class="over_link_card_destaq">
@@ -272,10 +314,25 @@
 
                     <div class="card_destaq">
                         <a href="">
-                            <img src="assets/img/milk-party.png" alt="">
+                            <img src="https://sts-gestao.s3.amazonaws.com/uploads/noticias/842e973a8edf606f9873bd33592a2889.png" alt="">
                         </a>
                         <div class="info_card_destaq">
-                            <h4>Título do Destaque</h4>
+                            <h4>SELO UNICEF</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid error amet tempore voluptas minima, quia numquam dolore ad.</p>
+
+                            <div class="over_link_card_destaq">
+                                <a href="" class="link_card_destaq">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <div class="card_destaq">
+                        <a href="">
+                            <img src="https://sts-gestao.s3.amazonaws.com/uploads/noticias/8b87551d4d406185ff50a5ad6da3db2e.png" alt="">
+                        </a>
+                        <div class="info_card_destaq">
+                            <h4>DECRETO DE DESAPROPRIAÇÃO</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid error amet tempore voluptas minima, quia numquam dolore ad.</p>
 
                             <div class="over_link_card_destaq">
@@ -354,12 +411,105 @@
     </main>
 
     <footer class="footer">
-        <div class="container"></div>
+        <div class="container d-flex content_footer">
+            <div class="f-25">
+                <h3>Prefeitura</h3>
+
+                <ul>
+                    <li><a href="">Prefeito</a></li>
+                    <li><a href="">Vice-Prefeito</a></li>
+                    <li><a href="">Galeria de Prefeitos</a></li>
+                </ul>
+            </div>
+
+            <div class="f-25">
+                <h3>Serviços</h3>
+
+                <ul>
+                    <li><a href="">Portal da Transparência</a></li>
+                    <li><a href="">e-sic</a></li>
+                    <li><a href="">Links Importantes</a></li>
+                    <li><a href="">Nota Fiscal Eletrônica</a></li>
+                    <li><a href="">Licitações</a></li>
+                </ul>
+            </div>
+
+            <div class="f-25">
+                <h3>Outros Acessos</h3>
+
+                <ul>
+                    <li><a href="">Receitas</a></li>
+                    <li><a href="">Despesas</a></li>
+                    <li><a href="">Contratos</a></li>
+                    <li><a href="">Radar da Transparência</a></li>
+                    <li><a href="">Ouvidoria</a></li>
+                    <li><a href="">Notas Eletrônicas</a></li>
+                </ul>
+            </div>
+
+            <div class="f-25">
+                <h3>Menu</h3>
+
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Competências e Responsáveis</a></li>
+                    <li><a href="">Notícias</a></li>
+                    <li><a href="">Serviços</a></li>
+                    <li><a href="">Licitações</a></li>
+                    <li><a href="">Legislações</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container d-flex content_bottom_footer">
+                <div class="f-33 col_bottom_footer">
+                    <a href="" class="logo_header">
+                        <img src="assets/img/logo.png" alt="">
+                        <div class="info_logo">
+                            <p><strong>Prefeitura</strong></p>
+                            <p>São José do Divino</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="f-33 col_bottom_footer">
+                    <div class="location_footer">
+                        <span><i class="bi bi-geo-alt-fill"></i></span>
+                        <p>AVENIDA MANOEL DÍVINO - PREFEITURA MUNICIPAL DE SÃO JOSÉ DO DIVINO - PI</p>
+                    </div>
+                </div>
+                <div class="f-33 col_bottom_footer">
+                    <div class="location_footer">
+                        <span><i class="bi bi-envelope"></i></span>
+                        <ul>
+                            <li><a href="">prefeitura@saojosedodivino.pi.gov.br</a></li>
+                            <li><a href="">86-98194-2918</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="down_footer">
+            <p>© Copryright - 2024. Todos os direitos reservados</p>
+        </div>
     </footer>
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 
 </body>
 </html>
