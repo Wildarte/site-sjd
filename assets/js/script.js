@@ -70,4 +70,51 @@ $(document).ready(function(){
 
     });
 
+
+    //========================= page secretarias ==================================
+    const container_comp = document.querySelector('.container_comp');
+    if(container_comp){
+        
+        const card_comp = document.querySelectorAll('.card_comp');
+        const btn_card_comp_more = document.querySelectorAll('.btn_card_comp_more');
+        const desc_card_comp = document.querySelectorAll('.desc_card_comp');
+        const over_card_comp = document.querySelectorAll('.over_card_comp');
+        const btn_close_card_comp = document.querySelectorAll('.btn_close_card_comp');
+        const btn_card_comp_more_mobile = document.querySelectorAll('.btn_card_comp_more_mobile');
+
+        btn_card_comp_more.forEach((item, index) => {
+
+            item.addEventListener('click', () => {
+
+                card_comp[index].classList.add('open_card_comp');
+                desc_card_comp[index].classList.add('open_desc_card_comp');
+                over_card_comp[index].classList.add('open_over_card_comp');
+                btn_close_card_comp[index].classList.add('d-block')
+
+            });
+
+            btn_close_card_comp[index].addEventListener('click', () => {
+                card_comp[index].classList.remove('open_card_comp');
+                desc_card_comp[index].classList.remove('open_desc_card_comp');
+                over_card_comp[index].classList.remove('open_over_card_comp');
+                btn_close_card_comp[index].classList.remove('d-block')
+            });
+
+        });
+
+        btn_card_comp_more_mobile.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                if(desc_card_comp[index].classList.contains('open_desc_card_comp')){
+                    desc_card_comp[index].classList.remove('open_desc_card_comp');
+                    item.innerHTML = "Ver Mais";
+                }else{
+                    desc_card_comp[index].classList.add('open_desc_card_comp');
+                    item.innerHTML = "Ocultar";
+                }
+                
+            })
+        })
+
+    }
+
 });
